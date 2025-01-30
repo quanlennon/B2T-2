@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Scroll</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .video-item {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        video {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .video-item h2 {
+            position: absolute;
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="video-container">
+    <div class="video-item">
+        <video src="https://tinyurl.com/faby87ue" autoplay muted loop></video>
+        <h2>Video 1</h2>
+    </div>
+    <div class="video-item">
+        <video src="video2.mp4" autoplay muted loop></video>
+        <h2>Video 2</h2>
+    </div>
+    <div class="video-item">
+        <video src="video3.mp4" autoplay muted loop></video>
+        <h2>Video 3</h2>
+    </div>
+    <!-- Add more video items as needed -->
+</div>
+
+</body>
+</html>
